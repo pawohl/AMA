@@ -54,3 +54,4 @@ The whole pocket:
 GNU AFFERO GENERAL PUBLIC LICENSE version 3
 
 Some modules are available under less restrictive licenses.
+None of the authors of the components used explicitly endorsed that and how these are used here.

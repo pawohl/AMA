@@ -1,4 +1,20 @@
 #################
+## Custom
+#################
+
+*.sla
+*.zip
+*.xlsx
+*.pdf
+*.pro.user
+*.pro.user.*
+deploy_bin.bat
+copyDBToDistro.bat
+packages/
+sourcedata/
+doc/
+
+#################
 ## Eclipse
 #################
 
