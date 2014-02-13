@@ -1,0 +1,6 @@
+Tweaked feature detection not to detect every Qt App as touch device
+
+this.is_touch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) && window.touchBuild;
+
+in .\ui\ui.js
+----------------------------------------

@@ -16,6 +16,20 @@ sourcedata/
 doc/
 
 #################
+## Ketcher server components
+#################
+qt/resources/ketcher/ketcher.py
+qt/resources/ketcher/favicon.ico
+qt/resources/ketcher/base64_sloooow.js
+qt/resources/ketcher/demo.html
+qt/resources/ketcher/layout_patterns.sh
+qt/resources/ketcher/pack.sh
+qt/resources/ketcher/pack-zip.sh
+qt/resources/ketcher/render_buttons.sh
+qt/resources/ketcher/png/logo.png
+
+
+#################
 ## Eclipse
 #################
 
