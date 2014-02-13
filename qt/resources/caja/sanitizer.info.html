@@ -1,0 +1,55 @@
+<div> 
+ <a href="http://code.google.com/p/google-caja/wiki/JsHtmlSanitizer">SOURCE PAGE</a>
+ 
+ <i>How to use caja as a stand-alone client side sanitizer</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Sun Mar 18 23:25:09 2012">
+ Mar 18, 2012</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/118353700343980340474/">jas...@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Introduction"></a>Introduction<a href="#Introduction" class="section_anchor"></a></h1><p>The Caja project includes a html-sanitizer written in javascript which can be used independently of the cajoler.  You can use it to remove potentially executable javascript from a snippet of html.  To use it, first build html-sanitizer-minified.js by running <tt>ant</tt>. </p><p>Use a <tt>&lt;script&gt;</tt> tag to include the resulting <tt>com/google/caja/plugin/html-sanitizer-minified.js</tt> in your program.  To sanitize a snippet of javascript, use the <tt>html_sanitize(htmlSnippet, urlTransformer, nameIdClassTransformer)</tt> to sanitize your html snippet where: </p><ul><li><tt>htmlSnippet</tt> is the snippet you want to sanitize </li><li><tt>urlTransformer</tt> is a function which is called on every url in <tt>htmlSnippet</tt>.  <tt>javascript:</tt> urls are removed before being passed to the urlTransformer.  The transformer allows you to <i>whitelist</i> urls or rewrite them.  For example, you may only want to allow urls to a particular domain. </li></ul><ul><li><tt>nameIdClassTransformer</tt> is a function which is called on every id, name and class in <tt>htmlSnippet</tt> </li></ul><p>The return value is the html snippet with all script and style tags removed, and urls, ids, names and classes rewritten according to the transformers.  </p><h2><a name="Sanitizing_CSS"></a>Sanitizing CSS<a href="#Sanitizing_CSS" class="section_anchor"></a></h2><p>The sanitizer removes style tags because they can include code which is interpreted as javascript on some browsers and because styles can affect the entire page, not just the snippet being sanitized.  Style attributes can be safely contained if they are sanitized.  If you&#x27;d like to sanitize style attributes (rather than style tags), you can include <tt>com/google/caja/plugin/html-css-sanitizer-minified.js</tt> instead.  This exposes exactly the same api as <tt>html_sanitize</tt> but also allows sanitized css property names and values in style attributes and rewrites any urls in inline styles using the <tt>urlTransformer</tt>. </p><h1><a name="Advanced_Use"></a>Advanced Use<a href="#Advanced_Use" class="section_anchor"></a></h1><p>If you need more control, you can use <tt>html.makeSaxParser</tt> to create your own SAX style processor.  <tt>makeSaxParser</tt> takes as its argument, an object that contains event handlers like: </p><pre class="prettyprint">var mySaxParser = html.makeSaxParser(
+    {
+      startDoc: function (x) { /* called first before processing starts */ },
+      startTag: function (tagNameLowerCase, attribs, x) {
+        // called on start tags.  may modify attribs.
+      },
+      endTag: function (tagName, x) {
+        // called on end tags.
+      },
+      pcdata: function (plainText, x) {
+        // plainText has entities replaced with the literal value.
+      },
+      rcdata: function (plainText, x) {
+        // contents of a TITLE, TEXTAREA, or similar tag.
+      },
+      cdata: function (plainText, x) {
+        // contents of a SCRIPT, STYLE, XMP, or similar tag.
+      },
+      endDoc: function (x) {
+        // called when processing finished.
+      }
+    });</pre><p>After this call, <tt>mySaxParser</tt> is a function that takes HTML text and an arbitrary value that will be passed as the parameter <tt>x</tt> to the event handlers above. </p><h1><a name="Example"></a>Example<a href="#Example" class="section_anchor"></a></h1><pre class="prettyprint">    &lt;script src=&quot;html-sanitizer-minified.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+      function urlX(url) { if(/^https?:\/\//.test(url)) { return url }}
+      function idX(id) { return id }
+      alert(html_sanitize(&#x27;&lt;b&gt;hello&lt;/b&gt;&lt;img src=&quot;http://asdf&quot;&gt;&lt;a href=&quot;javascript:alert(0)&quot;&gt;&lt;script src=&quot;http://dfd&quot;&gt;&lt;\/script&gt;&#x27;, urlX, idX))
+    &lt;/script&gt;</pre>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
