@@ -1,6 +1,9 @@
 # Such- und Filteranwendung für die Arzneimittelanalytik (AMA)
 *Mit Hilfe von Rf-Werten aus der Dünnschichtchromatographie (DC) und Farbreaktionen auf Arzneimittel oder toxikologisch relevante Stoffe rückschließen*
 
+## Benutzung
+[Zusammenfassung der Features mit vielen Screenshots auf github.io](http://pawohl.github.io/AMA/).
+
 ## Implementierung
 ### Datenbankverwaltung (Master)
 Die Arzneistoffliste wird mit Hilfe einer in [Qt](http://qt-project.org) eingebetteten Web-Anwendung verwaltet. [SQLite](http://de.wikipedia.org/wiki/SQLite) ist als Datenbank-Backend vorkonfiguriert. Momentan gibt es noch kein vollständiges SQL-Script das die Datenbank automatisch erstellt und konfiguriert. Hilfe wird dankbar angenommen. Deshalb ist die SQLite-Datenbank als solches mit im Repo.
