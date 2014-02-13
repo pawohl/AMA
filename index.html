@@ -21,6 +21,7 @@
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/pawohl/AMA">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/pawohl/AMA/releases">Precompiled Binaries for Windows</a></li>
           <li class="downloads"><a href="https://github.com/pawohl/AMA/zipball/master">ZIP</a></li>
           <li class="downloads"><a href="https://github.com/pawohl/AMA/tarball/master">TAR</a></li>
           <li class="title">DOWNLOADS</li>
@@ -32,47 +33,61 @@
       <section>
         <div id="title">
           <h1>Arzneimittelanalytik Suchanwendung</h1>
-          <p>Filter and search application for systematic Thin-Layer-Chromatography // Filter-und Suchanwendung für die Dünnschichtchromatographie</p>
+          <p>Filter and search application for systematic Thin-Layer-Chromatography</p>
+          <p>Filter-und Suchanwendung für die Dünnschichtchromatographie</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/pawohl">pawohl</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h2>
+<a name="ama-gio-features" class="anchor" href="#ama-gio-features" id="ama-gio-features"><span class="octicon octicon-link"></span></a>Features</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h3>Datenbankverwaltung</h3>
+<p>Mit Qt und Standard-SQL-Syntax ist die Anwendung zukunftssicher auf nahezu allen Plattformen und mit allen Datenbank-Backends lauffähig. <br />Alle zur Verwaltung der Stoffe benötigten Funktionen sind bereits in die Anwendung integriert. So können Datensätze importiert, exportiert, Strukturformeln aus Dateien geladen werden, Datensätze gelöscht oder neu hinzugefügt werden. Ein integrierter Strukturformeleditor ermöglicht das Hinzufügen neuer Datensätze im Handumdrehen.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<figure><img src="images/screenshots/hauptmenu_stoff_hinzufuegen.png" class="elevateZoom"/><figcaption>Hauptmenü der Masterversion (Datenbankverwaltung)</figcaption></figure>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Übersichtliche Menüs und ein auf die Anforderungen zugeschnittener Funktionsumfang zeichnen diese Anwendung aus.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<figure><img src="images/screenshots/stoff_hinzufuegen.png" class="elevateZoom"/><figcaption>Formular zur Eingabe eines neuen Stoffes</figcaption></figure>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Soft-Hinting: Ungültige Eingaben werden erkannt und hervorgehoben, Strukturformeleditor und Rich-Text-Editor erleichtern das Hinzufügen neuer Datensätze.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h3>Ansichten</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Ob Tablet, Smartphone, Laptop, Netbooks, Drucker oder der 24″ Monitor; Analysenbearbeitung oder Vorbereitung – Für alle gibt es die richtige Ansicht.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<figure><img src="images/screenshots/analysenansicht.png" class="elevateZoom"/><figcaption>Analysenansicht: Kompakt, kurz und knapp</figcaption></figure>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p> </p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<figure><img src="images/screenshots/sicherheit-und-informationen.png" class="elevateZoom"/><figcaption>Sicherheitshinweise und weitere Informationen: Ideal für die Vorbereitung auf den Umgang mit dem Gefahrenstoff</figcaption></figure>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p> </p>
+
+<h3>Suche</h3>
+
+<p>Ein übersichtlicher Suchdialog mit intelligenter Options-Auswahl und nützlichen Extras macht die Suche anhand vorliegender Analysenergebnisse zum Kinderspiel. Die Ergebnissortierung erfolgt durch einen eigens entwickelten Algorithmus nach Relevanz.</p>
+
+<figure><img src="images/screenshots/suchdialog.png" class="elevateZoom"/><figcaption>Suchdialog: Erlaubt die Suche durch (korrigierte) Rf-Werte, die Einschränkung durch Farbreaktionen und die Eingabe von Strukturbestandteilen.</figcaption></figure>
+
+<p>Außerdem können Namen vergeben werden, so dass die Anwendung auch durch mehrere Benutzer genutzt werden kann. Die Ergebnisse werden in jeweils eigenen Tabs dargestellt.</p>
+
+<figure><img src="images/screenshots/hrfRechner.png" class="elevateZoom"/><figcaption>hrfRechner: Kein umständliches Eingeben in den Taschenrechner erforderlich: Die Anwendung kennt bereits alle verwendeten Referenzsubstanzen; Das Diagramm kann zur Abschätzung der DC-Qualität herangezogen werden.</figcaption></figure>
+
+
+<h2><a name="ama-gio-download" class="anchor" href="#ama-gio-download" id="ama-gio-download"><span class="octicon octicon-link"></span></a>Download, Building, etc.</h2>
+<p>Siehe <a href="https://github.com/pawohl/AMA">README.md</a>.</p>
+
+<h2><a name="ama-gio-contact" class="anchor" href="#ama-gio-contact" id="ama-gio-contact"><span class="octicon octicon-link"></span></a>Kontakt, Feedback, Fragen</h2>
+<p>Über <a href="https://docs.google.com/forms/d/1lAEXbnF9GiyhCk9HIowjyDUEO7dFA6x9WJNhY2m0oMs/viewform?hl=de">Google Forms</a> oder als <a href="https://github.com/pawohl/AMA/issues">Problembericht auf GitHub</a></p>
+
       </section>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+  
+    <script src="javascripts/jquery.elevatezoom.js"></script>
   </body>
 </html>
