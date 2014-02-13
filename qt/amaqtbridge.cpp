@@ -110,10 +110,9 @@ AMAQtBridge::AMAQtBridge(QNetworkDiskCache* netcache, QWebView* parent)
         if (storedDirtyState()) {
             enqueueUpdateSorting();
         }
+        m_id_field = getMetaSetting("CompoundIdField");
     }
     m_excluded_fields << "c_id" << "c_nr";
-    m_id_field = getMetaSetting("CompoundIdField");
-
 }
 //! [ AMAQtBridge - Constructor ]
 AMAQtBridge::~AMAQtBridge()
