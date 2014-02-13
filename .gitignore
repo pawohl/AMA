@@ -28,6 +28,12 @@ qt/resources/ketcher/pack-zip.sh
 qt/resources/ketcher/render_buttons.sh
 qt/resources/ketcher/png/logo.png
 
+#################
+## jQuery and plug-ins
+#################
+qt/resources/jQuery/jqPlot/examples
+qt/resources/jQuery/jqPlot/docs
+
 
 #################
 ## Eclipse
