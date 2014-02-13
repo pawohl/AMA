@@ -1,0 +1,70 @@
+@media print{
+@page {
+  size: landscape;
+  margin: 1em 0.5em;
+}
+
+body {
+  font-size: 0.75em !important;
+}
+body * {
+  font-family: Helvetica, Arial, Verdana, sans-serif !important;
+}
+
+body .print-block {
+  display: block;
+}
+/**
+ * Hide space-consuming elements that are irrelevant for printed versions
+*/
+.print-hidden {
+  display: none !important;
+}
+
+.print-reset {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 none !important;
+}
+
+div.tabcontent tr { 
+	background-color: #FFF !important;
+  color: #000 !important;
+}
+
+abbr {
+  text-decoration:none;
+}
+
+thead {
+  display: table-header-group;
+}
+
+/* just in case someone wants to print it with Flying Saucer xhtmlrenderer */
+table {
+    -fs-table-paginate: paginate;
+}
+
+tfoot.ama-legend-foot {
+  font-size: 0.7em;
+  /* prevents repeating the legend over and over */
+  display: table-row-group !important;
+}
+
+td {
+  page-break-inside: avoid;
+}
+
+pre {
+  font-family: monospace,Courier !important;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse:collapse;
+}
+
+}

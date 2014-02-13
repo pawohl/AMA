@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>AMA Stoffliste</title>
+		<meta name="author" content="Database: Dr. Petra Frohberg (Uni Halle); Application: Felix Pahlow; REUSED COMPONENTS: The jQuery Project; Qt (Trolltech/Nokia/Digia) from Finland; The WebKit Open Source Project; SQLite (initially by D. Richard Hipp)">
+		<meta name="description" content="Such- bzw. Filteranwendung für die Arzneimittelanalytik: Mit Hilfe von Rf-Werten aus der Dünnschichtchromatographie (DC) und Farbreaktionen auf Arzneimittel oder toxikologisch relevante Stoffe rückschließen">
+		<link rel="help" href="http://pc.pharmazie.uni-halle.de/biochempharm/mitarbeiter/frohberg/">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!-- jQuery -->
+		<link href="jQuery/jquery-ui-1.10.3.css" rel="stylesheet" type="text/css">
+		<link href="jQuery/themes/flick/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css">
+		<link href="jQuery/tabletheme.css" rel="stylesheet" type="text/css">
+		<link href="jQuery/jqGrid/css/ui.jqgrid.css" rel="stylesheet" type="text/css">
+
+		<script src="loader.js"></script>
+
+		<script src="jQuery/jquery-1.9.1.js"></script>
+		<script src="jQuery/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="jQuery/jquery.fullscreen.js"></script>
+		<script src="jQuery/jquery.async.js"></script>
+		<script src="jQuery/jquery.fixedheadertable.js"></script>
+		<script src="jQuery/jquery.json-2.4.min.js"></script>
+		<script src="jQuery/jquery.jstorage.min.js"></script>
+		<script src="jQuery/jquery.features.js"></script>
+		<script src="jQuery/jqGrid/js/i18n/grid.locale-de.js" type="text/javascript"></script>
+		<script src="jQuery/jqGrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
+
+		<link href="common.css" rel="stylesheet" type="text/css">
+		<link href="print.css" rel="stylesheet" media="print" type="text/css">
+		<link href="mobile.css" rel="stylesheet" media="handheld" type="text/css">
+		<script src="util.js"></script>
+		<script src="searchalgo.js"></script>
+		<script src="tabslogic.js"></script>
+		<script src="searchdlg.js"></script>
+		<script src="jsinteropQt.js"></script>
+		<script src="printtable.js"></script>
+    <script src="grid.js"></script>
+		<script src="feedback.js"></script>
+	</head>
+	<body style="margin:0.1em" class="flick light">
+		<noscript>
+			<h1>Ohne JavaScript funktioniert es leider nicht!</h1>
+			JavaScript kann in Deinen Browsereinstellungen aktiviert werden. 
+			Bitte beachte, dass JavaScript potentielle Sicherheitsrisiken birgt. Wenn es aktiviert ist, ist es umso wichtiger eine aktuelle Browserversion zu verwenden.
+			<br/>
+			<a href="https://www.google.de/search?q=javascript+aktivieren">Google nach Anweisungen zum Aktivieren von JavaScript durchsuchen</a>
+			<br/><br/>
+		</noscript>
+		<script type="text/javascript">
+			/*window.onerror = function (error, url, line) {
+			  alert(error + ' on ' +  url + ' (l.' + line + ')');
+			}*/
+		</script>
+		<div id="scriptcontent" style="display:none">
+			<div class="print-block">Druckversion der Substanzliste für das Arneimittelanalytikpraktikum an der Martin-Luther-Universiät Halle-Wittenberg. Einige Hilfsstoffe sind nicht gelistet. Alle Angaben ohne Gewähr.</div>
+			<div style="display:none" id="amaTopNote" class="ama-toptext ui-widget ui-widget-header ui-corner-bottom">
+				<div style="display:none" id="amaSortNote">Jetzt sortieren und nummerieren</div>
+			</div>
+			<div id="dialog" title="Neue Suche" style="display:none">
+				<form autocomplete="off">
+					<input type="submit" value="dummy" style="position: absolute; height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" tabindex="-1"/>
+					<fieldset class="ui-helper-reset">
+						<fieldset class="ui-helper-reset ui-corner-all ama-dotted-border">
+							<legend>Korrigierte hRf-Werte</legend>
+							<ul class="ama-tiaft-inputs">
+							</ul>
+						</fieldset>
+						<fieldset class="ui-helper-reset ui-corner-all ama-dotted-border ama-fieldblock">
+							<legend>Einstellungen</legend>
+							<label for="amaNewSearchTitle" class="ama-bold">Name der Suche (z.B. Analysennummer)</label>
+							<input type="text" name="amaNewSearchTitle" id="amaNewSearchTitle" value="" style="width:98%; max-width:450px;" size="60" class="ui-widget-content ui-corner-all ama-bold" />
+							<fieldset class="ui-helper-reset ui-corner-all ama-dotted-border ama-fieldblock">
+								<legend>Toleranzen</legend>
+								<label for="amaTiaftTolerance" class="ama-broken-label">Maximal zulässige Abweichung je System:</label>
+								<input type="text" value="15" size="3" id="amaTiaftTolerance" class="ui-widget-content ui-corner-all ama-valid-input" pattern="\d{1,2}" required="required"/><br/>
+								<label for="amaTiaftExcept" class="ama-broken-label">Anzahl tolerierter Ausreisser (TIAFT):</label>
+								<input type="text" value="3" size="3" id="amaTiaftExcept" class="ui-widget-content ui-corner-all ama-valid-input" pattern="\d{1,1}" required="required"/><br/>
+								<label for="amaTiaftExceptTolerance" class="ama-broken-label">Maximalabweichung der Ausreisser:</label>
+								<input type="text" value="28" size="3" id="amaTiaftExceptTolerance" class="ui-widget-content ui-corner-all ama-valid-input" pattern="\d{1,3}" required="required"/><br/>
+								<label for="amaFRTolerance" class="ama-broken-label">Tolerierte Abweichungen der weiteren Erkenntnisse:</label>
+								<input type="text" value="66" size="3" id="amaFRTolerance" class="ui-widget-content ui-corner-all ama-valid-input" pattern="\d{1,3}" required="required"/>% der gemachten Angaben<br/>
+							</fieldset>
+						</fieldset>
+						<fieldset class="ui-helper-reset ui-corner-all ama-dotted-border ama-fieldblock" style="float:right">
+							<legend>Weitere Beobachtungen</legend>
+							<div class="ama-observations-inputs">
+							</div>
+						</fieldset>
+					</fieldset>
+				</form>
+			</div>
+			<div id="tabs" class="print-reset">
+				<ul>
+					<li><a href="#tabs-1">Stoffliste</a></li>
+					<li style="float:right"><button id="ama_bigsearch">Neue Suche</button><button id="ama_bigplus">Stoff hinzufügen</button><button id="ama_dropdown">Aktion auswählen</button></li>
+          <li style="float:right"><button id="ama_view">Ansicht</button></li>
+				</ul>
+				<ul id="ama_menu" style="max-width:220px; min-width:220px; position:absolute; z-index:1001;">
+					<li id="ama_master_options">
+						<a href="#">Master</a>
+						<ul style="max-width:300px; min-width:300px;">
+							<li><a href="#" id="ama_add_compound"><span class="ui-icon ui-icon-circle-plus"></span>Stoff hinzufügen</a></li>
+							<li class="ui-state-disabled"><a href="#" id="ama_sort_now"><span class="ui-icon ui-icon-triangle-2-n-s"></span>Jetzt automatisch sortieren</a></li>
+							<li><a href="#" id="ama_pack_and_go"><span class="ui-icon ui-icon-suitcase"></span>Studentenversion packen</a></li>
+              <li><a href="#" id="ama_import_record"><span class="ui-icon ui-icon-arrowthickstop-1-n"></span>Datensatz importieren</a></li>
+							<li><a href="#" id="ama_backup"><span class="ui-icon ui-icon-copy"></span>Backup der Datenbank</a></li>
+						</ul>
+					</li>
+					<li><a href="#" id="ama_search"><span class="ui-icon ui-icon-search"></span>Neue Suche …</a></li>
+					<li><a href="#" id="ama_load"><span class="ui-icon ui-icon-folder-open"></span>Laden …</a></li>
+					<li><a href="#" id="ama_save" title="Öffnet einen Dialog zum Speichern der Suche in Deinem Browser"><span class="ui-icon ui-icon-disk"></span>Speichern …</a></li>
+					<li><a href="#" id="ama_filter" title="Erlaubt es, die Suchergebnisse erneut zu durchsuchen"><span class="ui-icon ui-icon-arrowreturnthick-1-e"></span>Ergebnisse filtern …</a></li>
+					<li><a href="#print" target="printwindow" id="ama_print"><span class="ui-icon ui-icon-print"></span>Druckansicht …</a></li>
+					<li style="display:none"><a href="#" id="ama_allow_edit"><span class="ui-icon ui-icon-pencil"></span>Bearbeiten erlauben (für Notizen u.ä.)</a></li>
+					<li><a href="#" id="ama_minimize_app"><span class="ui-icon ui-icon-minusthick"></span>Minimieren</a></li>
+					<li><a href="#" id="ama_fullscreen_app"><span class="ui-icon ui-icon-extlink"></span>Vollbild</a></li>
+					<li><a href="#" id="ama_closefullscreen_app"><span class="ui-icon ui-icon-newwin"></span>Vollbildmodus verlassen</a></li>
+					<li id="ama_themes">
+						<a href="#"><span class="ui-icon ui-icon-document-b"></span>Aussehen</a>
+						<ul style="max-width:220px">
+							<li><a href="#dark" id="ama_theme_darkness">Darkness</a></li>
+							<li><a href="#dark" id="ama_theme_eggplant">Eggplant</a></li>
+							<li><a href="#light" id="ama_theme_flick">Flick</a></li>
+							<li><a href="#dark" id="ama_theme_jungle-frog">Jungle-Frog</a></li>
+							<li><a href="#light" id="ama_theme_redmond">Redmond</a></li>
+							<li><a href="#light" id="ama_theme_simple">Simple</a></li>
+							<li><a href="#dark" id="ama_theme_special">Special</a></li>
+						</ul>
+					</li>
+					<li><a href="#" id="ama_legend"><span class="ui-icon ui-icon-help"></span>Info …</a></li>
+					<li><a href="https://docs.google.com/forms/d/1lAEXbnF9GiyhCk9HIowjyDUEO7dFA6x9WJNhY2m0oMs/formResponse?hl=de" id="ama_feedback" target="_blank"><span class="ui-icon ui-icon-comment"></span>Feedback geben</a></li>
+					<li><a href="#" id="ama_close_app"><span class="ui-icon ui-icon-closethick"></span>Beenden</a></li>
+				</ul>
+        <ul id="ama_view_menu" style="max-width:200px; min-width:200px; position:absolute; z-index:1001;">
+          <!-- Empty; Will be filled dynamically by JS. -->
+        </ul>
+				<div id="tabs-1" class="tabcontent print-reset" style="height:100%">
+					<table id="progtable" style="width:100%; display:none;">
+						<tr>
+							<th style="border: none">
+								<div style="position:relative; min-height:35px;">
+									<div id="loadprogtxt">Laden der Liste…</div>
+									<div id="loadprog" style="width:100%; position:absolute; top:0; height:37px; z-index:0"> </div>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="ama_print_legend" class="print-block"></div>
+		</div>
+		<!-- scriptcontent --><script type="text/javascript">$('#scriptcontent').show();</script>
+		<!-- 
+			Rendering data
+			-->
+		<!-- Mobile device detection -->
+		<div style="display:none">
+			<div id="mobile-dummy"></div>
+		</div>
+		<script src="themes.js"></script>
+		<script src="uihandler.js"></script>
+		<script src="jQuery/jquery.client.js"></script>
+    <script type="text/javascript">$.hook('app.contentloaded').fire();</script>
+		<!-- div id="footer"><abbr title="Arzneimittelanalytik">AMA</abbr> App is available as loose HTML app and embedded in a thin-client through Qt and webkit. AMA App is OpenSource and you should be always able to get a copy if the source code free of charge. Special thanks to the developers of Qt, Webkit, jQuery and SQLite. Other conditions, however, apply to the database.</div -->
+	</body>
+</html>

@@ -1,0 +1,411 @@
+#dialog label {
+  margin-top: 0.5em;
+}
+#loadprogtxt {
+  width:100%;
+  min-height:20px;
+  position:absolute;
+  top:9px;
+  z-index:1;
+  text-shadow:0 0 4px #222;
+}
+.ama-graph-field, .ama-tlc-field {
+  height: 300px;
+  display: inline-block;
+  margin: 10px 10px 0px 10px;
+  border: 1px solid rgba(0,0,0,0);
+}
+.ama-tlc-field {
+  width: 150px;
+  height: 275px;
+  vertical-align: top;
+}
+.ama-graph-field {
+  width: 300px;
+}
+.ama-tlc-plate {
+  background: white;
+  position: relative;
+  border-radius: 2px 7px 3px 4px;
+  border: 1px solid #CCC;
+}
+.ama-tlc-plate-baseline {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  line-height: 1px;
+}
+.ama-tlc-track {
+  text-align: center;
+  position: absolute;
+  overflow: visible;
+}
+.ama-tlc-track-desc {
+  bottom: -25px;
+  font-size: 18px;
+  position: absolute;
+  color: grey;
+}
+.ama-tlc-maker-point {
+  position: absolute;
+  background: url('images/TLC_marker.png') no-repeat center;
+  height: 23px;
+  width: 18px;
+  left: 0px;
+  color: #000;
+  text-shadow: 0 0 1px #FFF;
+  text-align: left;
+}
+.ama-tlc-maker-point div {
+  height: 100%;
+  width: 200%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 10px;
+  line-height: 1em;
+}
+.ama-tlc-maker-point div:hover {
+  background: #DDD;
+  outline: 1px solid #222;
+}
+.ama-tlc-maker-point:hover {
+  z-index: 1;
+}
+.ama-tlc-system-circle {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  color: grey;
+  height: 28px;
+  width: 28px;
+  overflow: visible;
+  background: url('images/Pencil_circle.png') no-repeat center;
+}
+.ama-tlc-system-circle  div{
+  text-align: center;
+  padding-top: 1px;
+  font-size: 20px;
+}
+.ama-tlc-final-submit {
+  float: right;
+}
+.ama-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.ama-block {
+  min-width: 250px;
+  width: 46%;
+  margin: 0.1% 1%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+}
+.ama-formulaed-buttonset {
+  display: inline-block;
+  margin: 0 1em;
+}
+body.simple  #loadprogtxt {
+  text-shadow:none;
+}
+body.flick  #loadprogtxt {
+  text-shadow:0 0 4px #FF0084;
+}
+body.redmond  #loadprogtxt {
+  text-shadow:0 0 4px #fff;
+}
+.ama-bold {
+  font-weight: bold;
+}
+.ama-fullwidth {
+  width: 95%;
+}
+body.dark .ama-dotted-border {
+  border:1px dotted #fff;
+}
+body.light .ama-dotted-border {
+  border:1px dotted #000;
+}
+body.dark .ama-magnify-hover {
+  background-color: #000;
+}
+body.light .ama-magnify-hover {
+  background-color: #fff;
+}
+body.eggplant .ama-magnify-hover {
+  background-color: #2d2634;
+}
+.ama-smiles:before {
+  content: "SMILES: ";
+}
+.ama-smiles {
+  font-size: 70%;
+  word-wrap: break-word;
+}
+.ama-fieldblock {
+	max-width: 450px;
+	display: inline-block;
+	padding: 10px;
+}
+.ama-broken-label {
+	display: block;
+}
+.ama-toptext {
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:50%;
+	z-index:10;
+	padding:.2em;
+	margin-left:-7em;
+	cursor: pointer;
+}
+.ama-tiaft-inputs, .ama-list-inputs, .ama-list-inputs-pretty {
+	text-align: center;
+	padding-left: 5px;
+}
+ul.ama-tiaft-inputs li, ul.ama-list-inputs li {
+	display: inline-block;
+}
+ul.ama-list-inputs-pretty li {
+	display: table-cell;
+}
+ul.ama-list-inputs li {
+	padding: .2em .5em;
+}
+ul.ama-list-inputs input {
+	text-align: center;
+}
+body.dark tr.ama-furtherhint-minus {
+	background: #224;
+}
+body.light tr.ama-furtherhint-minus {
+	background: #ddf;
+}
+body.dark tr.ama-furtherhint-plus {
+	background: #422;
+}
+body.light tr.ama-furtherhint-plus {
+	background: #fdd;
+}
+body.dark div.ama-observations-inputs tr.ama-furtherhint-minus.odd {
+	background: #446;
+}
+body.light div.ama-observations-inputs tr.ama-furtherhint-minus.odd {
+	background: #bbd;
+}
+body.dark div.ama-observations-inputs tr.ama-furtherhint-plus.odd {
+	background: #644;
+}
+body.light div.ama-observations-inputs tr.ama-furtherhint-plus.odd {
+	background: #dbb;
+}
+.ui-tabs .ui-tabs-panel {
+	padding: 0.7em 0.4em;
+}
+#tabs {
+  margin-top: 0.1em;
+}
+#tabs li .ui-icon-close {
+  float: left; margin: 0.4em 0.2em 0 0; cursor: pointer;
+}
+abbr {
+  cursor:help;
+  text-decoration:underline;
+}
+#footer {
+  font:small-caps .7em sans-serif
+}
+.fht-thead > table { 
+	-webkit-box-shadow: 0 0 7px #fff inset;
+	-moz-box-shadow: 0 0 7px #fff inset;
+	box-shadow: 0 0 7px #fff inset; 
+}
+.fht-thead {
+	z-index: 100;
+	-webkit-box-shadow: 0 3px 13px 1px #000;
+	-moz-box-shadow:0 3px 13px 1px #000;
+	box-shadow: 0 3px 13px 1px #000;
+}
+div.tabcontent table.printtable{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+div.tabcontent {
+  font-size: 0.85em;
+}
+div.tabcontent .printtable td, div.tabcontent .printtable th {
+  border: 1px solid #222;
+  vertical-align: middle;
+  padding: 1px;
+  text-align:center;
+}
+.ui-jqgrid tr.jqgrow td.ama-sf {
+  vertical-align: middle;
+  text-align:center;
+}
+body .ui-jqgrid tr.jqgrow td {
+  white-space: pre-wrap;
+}
+body .ui-jqdialog.ui-widget {
+  font-size: 0.9em;
+}
+body.dark div.tabcontent .printtable tr:nth-child(2n), body.dark div.ama-observations-inputs tr.odd { 
+	background-color: #333;
+}
+body.light div.tabcontent .printtable tr:nth-child(2n), body.light div.ama-observations-inputs tr.odd { 
+	background-color: #DDD;
+}
+body.eggplant div.tabcontent .printtable tr:nth-child(2n), body.eggplant div.ama-observations-inputs tr.odd { 
+	background-color: #2d2634;
+}
+body.light div.tabcontent  table.printtable { 
+	background-color: #FFF;
+}
+body.light.styled-legend legend {
+  background-color: #FFF;
+  color: #000;
+}
+body.dark.styled-legend legend {
+  background-color: #000;
+  color: #FFF;
+}
+body.eggplant.styled-legend legend {
+  background-color: #3D3644;
+}
+.ama-sepa {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border-top: 1px solid grey;
+}
+.ama-space {
+  padding: 0.2em;
+  margin: 0.5em 0;
+}
+.ama-placeholder-box:empty {
+  border: 1px solid grey;
+}
+
+.cke_panel {
+	z-index: 5000;
+}
+.ama-htmlrichtextedit {
+	overflow: auto;
+	resize: both;
+}
+.ama-valid-input:valid {
+	color: #000;
+	background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYmZkMjU1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTMlIiBzdG9wLWNvbG9yPSIjOGViOTJhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjNzJhYTAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjOWVjYjJkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==');
+	background: -moz-linear-gradient(-45deg, #bfd255 0%, #8eb92a 13%, #72aa00 14%, #9ecb2d 30%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#bfd255), color-stop(13%,#8eb92a), color-stop(14%,#72aa00), color-stop(30%,#9ecb2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #bfd255 0%,#8eb92a 13%,#72aa00 14%,#9ecb2d 30%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #bfd255 0%,#8eb92a 13%,#72aa00 14%,#9ecb2d 30%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #bfd255 0%,#8eb92a 13%,#72aa00 14%,#9ecb2d 30%); /* IE10+ */
+	background: linear-gradient(135deg, #bfd255 0%,#8eb92a 13%,#72aa00 14%,#9ecb2d 30%); /* W3C */
+}
+.ama-valid-input:invalid {
+	-webkit-box-shadow: 0px 0px 7px 3px #f6290c;
+	-moz-box-shadow: 0px 0px 7px 3px #f6290c;
+	box-shadow: 0px 0px 7px 3px #f6290c;
+}
+form input:focus, form textarea:focus, .cke_focus, button.ui-button:focus, .ama-valid-input:invalid:focus {
+	-webkit-box-shadow: 0px 0px 7px 3px #B8EC79;
+	-moz-box-shadow: 0px 0px 7px 3px #B8EC79;
+	box-shadow: 0px 0px 7px 3px #B8EC79;
+}
+body.flick form input:focus, body.flick form textarea:focus, body.flick .cke_focus, body.flick button.ui-button:focus, body.flick .ama-valid-input:invalid:focus{
+	-webkit-box-shadow: 0px 0px 7px 3px rgba(0, 115, 234, 0.7);
+	-moz-box-shadow: 0px 0px 7px 3px rgba(0, 115, 234, 0.7);
+	box-shadow: 0px 0px 7px 3px rgba(0, 115, 234, 0.7);
+}
+body.redmond form input:focus, body.redmond form textarea:focus, body.redmond .cke_focus, body.redmond button.ui-button:focus, body.redmond .ama-valid-input:invalid:focus{
+	-webkit-box-shadow: 0 0 7px 3px #FE8;
+	-moz-box-shadow: 0 0 7px 3px #FE8;
+	box-shadow: 0 0 7px 3px #FE8;
+}
+::selection {
+	background-color: #eaab35;
+}
+::-moz-selection {
+	background-color: #eaab35;
+}
+
+/* Special stuff related to data presentation */
+div.tabcontent td.ama-ind, div.tabcontent th.ama-ind,
+	div.tabcontent td.ama-eigensch, div.tabcontent th.ama-eigensch,
+	div.tabcontent td.ama-beo, div.tabcontent th.ama-beo,
+	div.tabcontent td.ama-fr, div.tabcontent th.ama-fr {
+    font-size: 0.8em 
+}
+/* render tiaft values in a different color */
+body.dark td.ama-tiaft,
+body.dark th.ama-tiaft {
+  color: #afa
+}
+body.light td.ama-tiaft,
+body.light th.ama-tiaft {
+  color: #052;
+}
+body.flick td.ama-tiaft,
+body.flick th.ama-tiaft {
+  color: #0073EA;
+}
+body.redmond td.ama-tiaft,
+body.redmond th.ama-tiaft {
+  color: #5C9CCC;
+}
+
+/* images of structural formulae */
+div.tabcontent td.ama-sf {
+  background-color: #fff;
+}
+div.tabcontent td.ama-sf>img {
+  max-height:100px;
+  height:auto;
+  width:auto;
+}
+.ama-invisible {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.print-block {
+  display: none;
+}
+/* special fields */
+.ama-cas {
+  font-family: monospace;
+}
+.ama-moledit-container {
+  position: relative;
+}
+.ama-autoexpand {
+  max-width: 35em;
+  max-height: 1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+.ama-autoexpand:hover, .ama-autoexpand:focus {
+  max-width: none;
+  max-height: none;
+  white-space: pre-wrap;
+}
+.ama-moledit-credits {
+  max-height: 1em;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+}
+.ama-moledit-credits:hover, .ama-moledit-credits:focus {
+  max-height: none;
+}
+.ama-moledit-credits-spacer {
+  height: 1em;
+}

@@ -1,0 +1,3 @@
+@media handheld {
+  #mobile-dummy { display: none; }
+}

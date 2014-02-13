@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>AMA Stoffliste</title>
+		<meta name="author" content="Database: Dr. Petra Frohberg (Uni Halle); Application: Felix Pahlow; REUSED COMPONENTS: The jQuery Project; Qt (Trolltech/Nokia/Digia) from Finland; The WebKit Open Source Project; SQLite (initially by D. Richard Hipp)">
+		<meta name="description" content="Such- bzw. Filteranwendung für die Arzneimittelanalytik: Mit Hilfe von Rf-Werten aus der Dünnschichtchromatographie (DC) und Farbreaktionen auf Arzneimittel oder toxikologisch relevante Stoffe rückschließen">
+		<link rel="help" href="http://pc.pharmazie.uni-halle.de/biochempharm/mitarbeiter/frohberg/">
+		
+		<link rel="shortcut icon" href="images/favicon.ico">
+		
+		<!-- jQuery -->
+		<link href="jQuery/jquery-ui-1.10.1.custom.min.css" rel="stylesheet">
+		<link href="jQuery/tabletheme.css" rel="stylesheet">
+		<script src="jQuery/jquery-1.8.3.min.js"></script>
+		<script src="jQuery/jquery-ui-1.10.1.custom.min.js"></script>
+		<script src="jQuery/jquery-ui.customtooltip.js"></script>
+		<script src="jQuery/jquery.fullscreen.js"></script>
+		<script src="jQuery/jquery.async.js"></script>
+		<script src="jQuery/jquery.fixedheadertable.js"></script>
+		<script src="jQuery/jquery.json-2.4.min.js"></script>
+		<script src="jQuery/jquery.jstorage.min.js"></script>
+		<script src="jQuery/jquery.features.js"></script>
+		<script src="ckeditor/ckeditor.js"></script>
+		<script src="util.js"></script>
+	</head>
+
+	<body>
+		<div id="dlg">
+			<div contenteditable="true"></div>
+			<div style="height:400px"></div>
+			<textarea></textarea>
+			<textarea></textarea>
+		</div>
+		<script>
+		var $dlg = $('#dlg');
+		$dlg.dialog({
+			modal: false,
+			draggable: false,
+			resizable: false
+		});
+		e = CKEDITOR.inline( $dlg.find('div')[0], { 
+			autoParagraph: false, 
+			clipboard_defaultContentType: 'text',
+			fontSize_defaultLabel: '0.7em',
+			fontSize_sizes: 'larger;smaller;0.5em;0.6em;0.7em;0.8em;0,9em;1em;1.1em;1.2em;1.4em;1.7em'
+		} );
+		</script>
+	</body>
+</html>
+	

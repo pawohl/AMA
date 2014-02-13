@@ -8,6 +8,7 @@
 *.pdf
 *.pro.user
 *.pro.user.*
+*.sqlite_
 deploy_bin.bat
 copyDBToDistro.bat
 packages/

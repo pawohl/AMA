@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>AMA Stoffliste</title>
+		<meta name="author" content="Database: Dr. Petra Frohberg (Uni Halle); Application: Felix Pahlow; REUSED COMPONENTS: The jQuery Project; Qt (Trolltech/Nokia/Digia) from Finland; The WebKit Open Source Project; SQLite (initially by D. Richard Hipp)">
+		<meta name="description" content="Such- bzw. Filteranwendung für die Arzneimittelanalytik: Mit Hilfe von Rf-Werten aus der Dünnschichtchromatographie (DC) und Farbreaktionen auf Arzneimittel oder toxikologisch relevante Stoffe rückschließen">
+		<link rel="help" href="http://pc.pharmazie.uni-halle.de/biochempharm/mitarbeiter/frohberg/">
+		
+		<link rel="shortcut icon" href="images/update.ico">
+		
+		<!-- jQuery -->
+		<link href="jQuery/jquery-ui-1.10.3.css" rel="stylesheet">
+    <link href="jQuery/themes/flick/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css">
+		<link href="jQuery/tabletheme.css" rel="stylesheet">
+    <script src="loader.js"></script>
+		<script src="jQuery/jquery-1.9.1.js"></script>
+		<script src="jQuery/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="jQuery/jquery-ui.customtooltip.js"></script>
+		<script src="jQuery/jquery.fullscreen.js"></script>
+		<script src="jQuery/jquery.async.js"></script>
+		<script src="jQuery/jquery.fixedheadertable.js"></script>
+		<script src="jQuery/jquery.json-2.4.min.js"></script>
+		<script src="jQuery/jquery.jstorage.min.js"></script>
+		<script src="jQuery/jquery.features.js"></script>
+
+		<link href="common.css" rel="stylesheet">
+    <link href="print.css" rel="stylesheet" media="print">
+    <link href="mobile.css" rel="stylesheet" media="handheld">
+		<script src="searchalgo.js"></script>
+		<script src="util.js"></script>
+		<script src="tabslogic.js"></script>
+		<script src="jsinteropQt.js"></script>
+		<script src="printtable.js"></script>
+    <script src="convert2SMILES.js"></script>
+    <script src="updateSVGs.js"></script>
+    <script src="feedback.js"></script>
+    <!--script src="security.js"></script-->
+	</head>
+	
+	
+  <body style="margin:0.1em" class="flick light">
+    <noscript>
+      <h1>Ohne JavaScript funktioniert es leider nicht!</h1>
+      JavaScript kann in Deinen Browsereinstellungen aktiviert werden. 
+      Bitte beachte, dass JavaScript potentielle Sicherheitsrisiken birgt. Wenn es aktiviert ist, ist es umso wichtiger eine aktuelle Browserversion zu verwenden.
+      <br/>
+      <a href="https://www.google.de/search?q=javascript+aktivieren">Google nach Anweisungen zum Aktivieren von JavaScript durchsuchen</a>
+      <br/><br/>
+    </noscript>
+    <button type="button">Update starten</button>
+    <div id="prog" style="height:6em; overflow:auto; border: 1px solid #ddd; resize:vertical;">Idle</div>
+    <progress value="0" max="100" style="width:800px"></progress>
+    <br />
+    
+    <script src="uihandler.js"></script>
+    <script src="update.js"></script>
+  </body>
+</html>
+
+
+

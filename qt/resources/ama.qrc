@@ -1,0 +1,595 @@
+<RCC>
+	<qresource prefix="/">
+		<file noinclude="true">ama.qrc</file>
+		<file>suchliste_starten.html</file>
+		<file licensefull="MIT License" licensetype="MIT" version="" licensefulltexturi="https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt">jQuery/jquery-1.9.1.js</file>
+		<file>jQuery/jquery-ui-1.10.3.custom.min.js</file>
+		<file>jQuery/jquery-ui-1.10.3.css</file>
+		<file licensefull="MIT License" licensetype="MIT">jQuery/jquery.async.js</file>
+		<file licensefull="MIT License" licensetype="MIT">jQuery/jquery.fixedheadertable.js</file>
+		<file licensefull="MIT License" licensetype="MIT">jQuery/jquery.json-2.4.min.js</file>
+		<file licensefull="MIT License" licensetype="MIT">jQuery/jquery.jstorage.min.js</file>
+		<file>jQuery/jquery.features.js</file>
+		<file>jQuery/jquery.fullscreen.js</file>
+		<file>jQuery/jquery.client.js</file>
+
+		<!-- Themes -->
+		<file>themes.js</file>
+		<file>jQuery/themes/darkness/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/darkness/images/animated-overlay.gif</file>
+		<file>jQuery/themes/darkness/images/ui-bg_flat_30_cccccc_40x100.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_flat_50_5c5c5c_40x100.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_glass_20_555555_1x400.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_glass_40_0078a3_1x400.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_glass_40_ffc73d_1x400.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_gloss-wave_25_333333_500x100.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_highlight-soft_80_eeeeee_1x100.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_inset-soft_25_000000_1x100.png</file>
+		<file>jQuery/themes/darkness/images/ui-bg_inset-soft_30_f58400_1x100.png</file>
+		<file>jQuery/themes/darkness/images/ui-icons_222222_256x240.png</file>
+		<file>jQuery/themes/darkness/images/ui-icons_4b8e0b_256x240.png</file>
+		<file>jQuery/themes/darkness/images/ui-icons_a83300_256x240.png</file>
+		<file>jQuery/themes/darkness/images/ui-icons_cccccc_256x240.png</file>
+		<file>jQuery/themes/darkness/images/ui-icons_ffffff_256x240.png</file>
+		<file>jQuery/themes/eggplant/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/eggplant/images/animated-overlay.gif</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_flat_0_aaaaaa_40x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_flat_55_994d53_40x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_flat_55_fafafa_40x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_gloss-wave_30_3d3644_500x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_highlight-soft_100_eae6ea_1x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_highlight-soft_25_30273a_1x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-bg_highlight-soft_45_5f5964_1x100.png</file>
+		<file>jQuery/themes/eggplant/images/ui-icons_454545_256x240.png</file>
+		<file>jQuery/themes/eggplant/images/ui-icons_734d99_256x240.png</file>
+		<file>jQuery/themes/eggplant/images/ui-icons_8d78a5_256x240.png</file>
+		<file>jQuery/themes/eggplant/images/ui-icons_a8a3ae_256x240.png</file>
+		<file>jQuery/themes/eggplant/images/ui-icons_ebccce_256x240.png</file>
+		<file>jQuery/themes/eggplant/images/ui-icons_ffffff_256x240.png</file>
+		<file>jQuery/themes/flick/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/flick/images/animated-overlay.gif</file>
+		<file>jQuery/themes/flick/images/ui-bg_flat_0_aaaaaa_40x100.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_flat_0_eeeeee_40x100.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_flat_55_ffffff_40x100.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_flat_75_ffffff_40x100.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_glass_65_ffffff_1x400.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png</file>
+		<file>jQuery/themes/flick/images/ui-bg_highlight-soft_50_dddddd_1x100.png</file>
+		<file>jQuery/themes/flick/images/ui-icons_0073ea_256x240.png</file>
+		<file>jQuery/themes/flick/images/ui-icons_454545_256x240.png</file>
+		<file>jQuery/themes/flick/images/ui-icons_666666_256x240.png</file>
+		<file>jQuery/themes/flick/images/ui-icons_ff0084_256x240.png</file>
+		<file>jQuery/themes/flick/images/ui-icons_ffffff_256x240.png</file>
+		<file>jQuery/themes/jungle-frog/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/jungle-frog/images/animated-overlay.gif</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_flat_0_303030_40x100.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_flat_55_000000_40x100.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_glass_20_4c4c4c_1x400.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_glass_40_0a0a0a_1x400.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_glass_55_f1fbe5_1x400.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_glass_60_000000_1x400.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_gloss-wave_85_9fda58_500x100.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_gloss-wave_95_f6ecd5_500x100.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-bg_hexagon_50_262626_12x10.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-icons_000000_256x240.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-icons_1f1f1f_256x240.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-icons_9fda58_256x240.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-icons_b8ec79_256x240.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-icons_cd0a0a_256x240.png</file>
+		<file>jQuery/themes/jungle-frog/images/ui-icons_ffffff_256x240.png</file>
+		<file>jQuery/themes/redmond/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/redmond/images/animated-overlay.gif</file>
+		<file>jQuery/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png</file>
+		<file>jQuery/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_217bc0_256x240.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_2e83ff_256x240.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_469bdd_256x240.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_6da8d5_256x240.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_cd0a0a_256x240.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_d8e7f3_256x240.png</file>
+		<file>jQuery/themes/redmond/images/ui-icons_f9bd01_256x240.png</file>
+		<file>jQuery/themes/simple/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/simple/images/animated-overlay.gif</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_0_aaaaaa_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_55_fbf9ee_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_65_ffffff_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_75_dadada_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_75_e6e6e6_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_75_ffffff_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-bg_flat_95_fef1ec_40x100.png</file>
+		<file>jQuery/themes/simple/images/ui-icons_222222_256x240.png</file>
+		<file>jQuery/themes/simple/images/ui-icons_2e83ff_256x240.png</file>
+		<file>jQuery/themes/simple/images/ui-icons_454545_256x240.png</file>
+		<file>jQuery/themes/simple/images/ui-icons_888888_256x240.png</file>
+		<file>jQuery/themes/simple/images/ui-icons_cd0a0a_256x240.png</file>
+		<file>jQuery/themes/special/jquery-ui-1.10.3.custom.css</file>
+		<file>jQuery/themes/special/images/animated-overlay.gif</file>
+		<file>jQuery/themes/special/images/ui-bg_flat_30_cccccc_40x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_flat_50_5c5c5c_40x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_glass_40_ffc73d_1x400.png</file>
+		<file>jQuery/themes/special/images/ui-bg_highlight-hard_20_0972a5_1x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_highlight-soft_33_003147_1x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_highlight-soft_35_222222_1x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_highlight-soft_44_444444_1x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_highlight-soft_80_eeeeee_1x100.png</file>
+		<file>jQuery/themes/special/images/ui-bg_loop_25_000000_21x21.png</file>
+		<file>jQuery/themes/special/images/ui-icons_222222_256x240.png</file>
+		<file>jQuery/themes/special/images/ui-icons_4b8e0b_256x240.png</file>
+		<file>jQuery/themes/special/images/ui-icons_a83300_256x240.png</file>
+		<file>jQuery/themes/special/images/ui-icons_cccccc_256x240.png</file>
+		<file>jQuery/themes/special/images/ui-icons_ffffff_256x240.png</file>
+
+		<file>jQuery/tabletheme.css</file>
+		<file>images/favicon.ico</file>
+		<file noinclude="true">images/update.ico</file>
+		<file>images/Pencil_circle.png</file>
+		<file>images/Pencil_stroke.png</file>
+		<file>images/TLC_marker.png</file>
+		<file>loader.js</file>
+		<file>jsinteropQt.js</file>
+		<file>printtable.js</file>
+		<file>searchalgo.js</file>
+		<file>searchdlg.js</file>
+		<file>hrf.js</file>
+		<file>tabslogic.js</file>
+		<file>util.js</file>
+		<file>uihandler.js</file>
+		<file>feedback.js</file>
+		<file>grid.js</file>
+		<file>views.js</file>
+		<file>studentrecords.js</file>
+		<file noinclude="true">masterrecords.js</file>
+		<file noinclude="true">databaseeditor.js</file>
+		<file noinclude="true">recordeditor.js</file>
+		<file>formulaedit.js</file>
+		<file noinclude="true">clipboard.js</file>
+		<file noinclude="true">convert2SMILES.js</file>
+		<file noinclude="true">updateSVGs.js</file>
+		<file noinclude="true">update.js</file>
+		<file noinclude="true">qtLocalWebSocket.js</file>
+		<file noinclude="true">update.html</file>
+		<file noinclude="true">update.sql</file>
+		<file noinclude="true">prohibited.html</file>
+		<file>common.css</file>
+		<file>print.css</file>
+		<file>mobile.css</file>
+    
+    <!-- jqGrid -->
+    <file noinclude="true">jQuery/jqGrid/css/ellipsis-xbl.xml</file>
+    <file>jQuery/jqGrid/css/ui.jqgrid.css</file>
+    <file noinclude="true">jQuery/jqGrid/js/Changes.txt</file>
+    <file noinclude="true">jQuery/jqGrid/js/install.txt</file>
+    <file noinclude="true">jQuery/jqGrid/js/jquery-1.9.0.min.js</file>
+    <file>jQuery/jqGrid/js/jquery.jqGrid.min.js</file>
+    <file noinclude="true">jQuery/jqGrid/js/jquery.jqGrid.src.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-cn.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-de.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-en.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-es.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-fr.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-pt.js</file>
+    <file>jQuery/jqGrid/js/i18n/grid.locale-ru.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/grid.addons.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/grid.postext.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/grid.setcolumns.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/jquery.contextmenu.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/jquery.searchFilter.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/jquery.tablednd.js</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/searchFilter.css</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/ui.multiselect.css</file>
+    <file noinclude="true">jQuery/jqGrid/plugins/ui.multiselect.js</file>
+
+		<!-- HTML Rich Text Editor written in JavaScript -->
+		<file noinclude="true">ckeditor/jquery.adapter.js</file>
+
+		<file noinclude="true" licensefull="GNU General Public License Version 2 or later || GNU Lesser General Public License Version 2.1 or later || Mozilla Public License Version 1.1 or later" licensetype="GPL||LGPL||MPL" version="2+||2.1+||1.1+" licensefulltexturi="http://www.gnu.org/licenses/gpl.html || http://www.gnu.org/licenses/lgpl.html || http://www.mozilla.org/MPL/MPL-1.1.html" licenseproofuri="http://ckeditor.com/about/license" licenseproofurishort="http://www.webcitation.org/6GBvWgwxP">ckeditor/ckeditor.js</file>
+		<file noinclude="true">ckeditor/config.js</file>
+		<file noinclude="true">ckeditor/LICENSE.md</file>
+		<file noinclude="true">ckeditor/styles.js</file>
+		<file noinclude="true">ckeditor/lang/de.js</file>
+		<file noinclude="true">ckeditor/lang/en-gb.js</file>
+		<file noinclude="true">ckeditor/lang/en.js</file>
+		<file noinclude="true">ckeditor/lang/es.js</file>
+		<file noinclude="true">ckeditor/lang/pt-br.js</file>
+		<file noinclude="true">ckeditor/plugins/icons.png</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ar.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/bg.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ca.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/cs.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/cy.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/da.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/de.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/el.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/en.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/eo.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/es.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/et.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/fa.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/fi.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/fr.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/gu.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/he.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/hi.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/hr.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/hu.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/it.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ja.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/km.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ku.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/lt.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/lv.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/mk.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/mn.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/nb.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/nl.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/no.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/pl.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/pt.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ro.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ru.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/sk.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/sl.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/sq.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/sv.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/th.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/tr.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/ug.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/uk.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/vi.js</file>
+		<file noinclude="true">ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js</file>
+		<file noinclude="true">ckeditor/plugins/about/dialogs/about.js</file>
+		<file noinclude="true">ckeditor/plugins/about/dialogs/logo_ckeditor.png</file>
+		<file noinclude="true">ckeditor/plugins/clipboard/dialogs/paste.js</file>
+		<file noinclude="true">ckeditor/plugins/colordialog/dialogs/colordialog.js</file>
+		<file noinclude="true">ckeditor/plugins/dialog/dialogDefinition.js</file>
+		<file noinclude="true">ckeditor/plugins/div/dialogs/div.js</file>
+		<file noinclude="true">ckeditor/plugins/fakeobjects/images/spacer.gif</file>
+		<file noinclude="true">ckeditor/plugins/find/dialogs/find.js</file>
+		<file noinclude="true">ckeditor/plugins/flash/dialogs/flash.js</file>
+		<file noinclude="true">ckeditor/plugins/flash/images/placeholder.png</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/button.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/checkbox.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/form.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/hiddenfield.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/radio.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/select.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/textarea.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/dialogs/textfield.js</file>
+		<file noinclude="true">ckeditor/plugins/forms/images/hiddenfield.gif</file>
+		<file noinclude="true">ckeditor/plugins/iframe/dialogs/iframe.js</file>
+		<file noinclude="true">ckeditor/plugins/iframe/images/placeholder.png</file>
+		<file noinclude="true">ckeditor/plugins/image/dialogs/image.js</file>
+		<file noinclude="true">ckeditor/plugins/image/images/noimage.png</file>
+		<file noinclude="true">ckeditor/plugins/link/dialogs/anchor.js</file>
+		<file noinclude="true">ckeditor/plugins/link/dialogs/link.js</file>
+		<file noinclude="true">ckeditor/plugins/link/images/anchor.png</file>
+		<file noinclude="true">ckeditor/plugins/liststyle/dialogs/liststyle.js</file>
+		<file noinclude="true">ckeditor/plugins/magicline/images/icon.png</file>
+		<file noinclude="true">ckeditor/plugins/pagebreak/images/pagebreak.gif</file>
+		<file noinclude="true">ckeditor/plugins/pastefromword/filter/default.js</file>
+		<file noinclude="true">ckeditor/plugins/preview/preview.html</file>
+		<file noinclude="true">ckeditor/plugins/scayt/LICENSE.md</file>
+		<file noinclude="true">ckeditor/plugins/scayt/README.md</file>
+		<file noinclude="true">ckeditor/plugins/scayt/dialogs/options.js</file>
+		<file noinclude="true">ckeditor/plugins/scayt/dialogs/toolbar.css</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_address.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_blockquote.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_div.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_h1.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_h2.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_h3.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_h4.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_h5.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_h6.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_p.png</file>
+		<file noinclude="true">ckeditor/plugins/showblocks/images/block_pre.png</file>
+		<file noinclude="true">ckeditor/plugins/smiley/dialogs/smiley.js</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/angel_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/angry_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/broken_heart.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/confused_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/cry_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/devil_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/embaressed_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/embarrassed_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/envelope.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/heart.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/kiss.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/lightbulb.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/omg_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/regular_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/sad_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/shades_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/teeth_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/thumbs_down.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/thumbs_up.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/tongue_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/tounge_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/smiley/images/wink_smile.gif</file>
+		<file noinclude="true">ckeditor/plugins/sourcedialog/dialogs/sourcedialog.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/specialchar.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/ca.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/cs.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/cy.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/de.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/el.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/en.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/eo.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/es.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/et.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/fa.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/fi.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/fr.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/he.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/hr.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/it.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/ku.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/lv.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/nb.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/nl.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/no.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/pl.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/pt-br.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/sk.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/sq.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/sv.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/th.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/tr.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/ug.js</file>
+		<file noinclude="true">ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js</file>
+		<file noinclude="true">ckeditor/plugins/table/dialogs/table.js</file>
+		<file noinclude="true">ckeditor/plugins/tabletools/dialogs/tableCell.js</file>
+		<file noinclude="true">ckeditor/plugins/templates/dialogs/templates.css</file>
+		<file noinclude="true">ckeditor/plugins/templates/dialogs/templates.js</file>
+		<file noinclude="true">ckeditor/plugins/templates/templates/default.js</file>
+		<file noinclude="true">ckeditor/plugins/templates/templates/images/template1.gif</file>
+		<file noinclude="true">ckeditor/plugins/templates/templates/images/template2.gif</file>
+		<file noinclude="true">ckeditor/plugins/templates/templates/images/template3.gif</file>
+		<file noinclude="true">ckeditor/plugins/wsc/LICENSE.md</file>
+		<file noinclude="true">ckeditor/plugins/wsc/README.md</file>
+		<file noinclude="true">ckeditor/plugins/wsc/dialogs/ciframe.html</file>
+		<file noinclude="true">ckeditor/plugins/wsc/dialogs/tmpFrameset.html</file>
+		<file noinclude="true">ckeditor/plugins/wsc/dialogs/wsc.css</file>
+		<file noinclude="true">ckeditor/plugins/wsc/dialogs/wsc.js</file>
+		<file noinclude="true">ckeditor/skins/moono/dialog.css</file>
+		<file noinclude="true">ckeditor/skins/moono/dialog_ie.css</file>
+		<file noinclude="true">ckeditor/skins/moono/dialog_ie7.css</file>
+		<file noinclude="true">ckeditor/skins/moono/dialog_ie8.css</file>
+		<file noinclude="true">ckeditor/skins/moono/dialog_iequirks.css</file>
+		<file noinclude="true">ckeditor/skins/moono/dialog_opera.css</file>
+		<file noinclude="true">ckeditor/skins/moono/editor.css</file>
+		<file noinclude="true">ckeditor/skins/moono/editor_gecko.css</file>
+		<file noinclude="true">ckeditor/skins/moono/editor_ie.css</file>
+		<file noinclude="true">ckeditor/skins/moono/editor_ie7.css</file>
+		<file noinclude="true">ckeditor/skins/moono/editor_ie8.css</file>
+		<file noinclude="true">ckeditor/skins/moono/editor_iequirks.css</file>
+		<file noinclude="true">ckeditor/skins/moono/icons.png</file>
+		<file noinclude="true">ckeditor/skins/moono/readme.md</file>
+		<file noinclude="true">ckeditor/skins/moono/images/arrow.png</file>
+		<file noinclude="true">ckeditor/skins/moono/images/close.png</file>
+		<file noinclude="true">ckeditor/skins/moono/images/mini.png</file>
+		
+		<!-- jqPlot JavaScript plotting library -->
+		<file licensefull="Apache License, Version 2.0" licensetype="APL" version="2" licensefulltexturi="http://www.apache.org/licenses/LICENSE-2.0">jQuery/jqPlot/excanvas.js</file>
+		<file licensefull="MIT License" licensetype="MIT">jQuery/jqPlot/copyright.txt</file>
+		<file>jQuery/jqPlot/gpl-2.0.txt</file>
+		<file>jQuery/jqPlot/jquery.jqplot.min.css</file>
+		<file>jQuery/jqPlot/jquery.jqplot.min.js</file>
+		<file>jQuery/jqPlot/MIT-LICENSE.txt</file>
+		
+		<file noinclude="true">jQuery/jqPlot/jquery.jqplot.css</file>
+		<file noinclude="true">jQuery/jqPlot/jquery.jqplot.js</file>
+		<file noinclude="true">jQuery/jqPlot/README.txt</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.barRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.barRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.BezierCurveRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.BezierCurveRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.blockRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.blockRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.bubbleRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.bubbleRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.canvasAxisLabelRenderer.js</file>
+		<file>jQuery/jqPlot/plugins/jqplot.canvasAxisLabelRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.canvasAxisTickRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.canvasAxisTickRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.canvasOverlay.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.canvasOverlay.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.canvasTextRenderer.js</file>
+		<file>jQuery/jqPlot/plugins/jqplot.canvasTextRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.categoryAxisRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.categoryAxisRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.ciParser.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.ciParser.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.cursor.js</file>
+		<file>jQuery/jqPlot/plugins/jqplot.cursor.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.dateAxisRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.dateAxisRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.donutRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.donutRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.dragable.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.dragable.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.enhancedLegendRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.enhancedLegendRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.funnelRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.funnelRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.highlighter.js</file>
+		<file>jQuery/jqPlot/plugins/jqplot.highlighter.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.json2.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.json2.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.logAxisRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.logAxisRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.mekkoAxisRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.mekkoAxisRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.mekkoRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.mekkoRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.meterGaugeRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.meterGaugeRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.mobile.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.mobile.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.ohlcRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.ohlcRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pieRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pieRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pointLabels.js</file>
+		<file>jQuery/jqPlot/plugins/jqplot.pointLabels.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pyramidAxisRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pyramidAxisRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pyramidGridRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pyramidGridRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pyramidRenderer.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.pyramidRenderer.min.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.trendline.js</file>
+		<file noinclude="true">jQuery/jqPlot/plugins/jqplot.trendline.min.js</file>
+
+		<!-- HTML sanitizer (or you may call it purifier) -->
+		<file noinclude="true" licensefull="Apache License, Version 2.0" licensetype="APL" version="2" licensefulltexturi="http://www.apache.org/licenses/LICENSE-2.0">caja/html-css-sanitizer.concat.min.js</file>
+
+		<!-- SVG canvas renderer -->
+		<file noinclude="true" licensefull="MIT" licensetype="MIT">canvg/canvg.js</file>
+		<file noinclude="true">canvg/MIT-LICENSE.txt</file>
+		<file noinclude="true">canvg/rgbcolor.js</file>
+		<file noinclude="true">canvg/StackBlur.js</file>
+    
+		<!-- Canvas2Image converter -->
+		<file noinclude="true" licensefull="MIT" licensetype="MIT" licensefulltexturi="http://www.opensource.org/licenses/mit-license.php">canvas2image/canvas2image.js</file>
+
+		<!-- Required by multiple entities: Ketcher, Canvas2Image -->
+		<file noinclude="true" licensefull="Free software" licensetype="Free software">lib/base64.js</file>
+		<file noinclude="true" licensefull="MIT/X11" licensetype="MIT/X11">lib/FileSaver.js</file>
+
+		<!-- Structural Formula editor -->
+		<file>formulaedit_ketcher.js</file>
+		<file noinclude="true">moledit_test.html</file>
+
+		<file noinclude="true" licensefull="AGPL v3" licensetype="AGPL" version="3">ketcher/demo.html</file>
+		<file noinclude="true">ketcher/favicon.ico</file>
+		<file>ketcher/ketcher.css</file>
+		<file>ketcher/ketcher.html</file>
+		<file>ketcher/ketcher.js</file>
+		<file noinclude="true">ketcher/ketcher.py</file>
+		<file noinclude="true">ketcher/layout_patterns.sh</file>
+		<file>ketcher/LICENSE.GPL</file>
+		<file>ketcher/loading.gif</file>
+		<file noinclude="true">ketcher/pack-zip.sh</file>
+		<file noinclude="true">ketcher/pack.sh</file>
+		<file>ketcher/prototype-min.js</file>
+		<file>ketcher/raphael-group-plugin.js</file>
+		<file>ketcher/raphael-min.js</file>
+		<file>ketcher/raphael.js</file>
+		<file>ketcher/render_buttons.sh</file>
+		<file>ketcher/chem/cis_trans.js</file>
+		<file>ketcher/chem/dfs.js</file>
+		<file>ketcher/chem/element.js</file>
+		<file>ketcher/chem/molfile.js</file>
+		<file>ketcher/chem/sgroup.js</file>
+		<file>ketcher/chem/smiles.js</file>
+		<file>ketcher/chem/stereocenters.js</file>
+		<file>ketcher/chem/struct.js</file>
+		<file>ketcher/chem/struct_valence.js</file>
+		<file>ketcher/mol/charge_minus.mol</file>
+		<file>ketcher/mol/charge_plus.mol</file>
+		<file>ketcher/mol/crossed.mol</file>
+		<file>ketcher/mol/doublearomatic.mol</file>
+		<file>ketcher/mol/down.mol</file>
+		<file>ketcher/mol/singlearomatic.mol</file>
+		<file>ketcher/mol/singledouble.mol</file>
+		<file>ketcher/mol/up.mol</file>
+		<file>ketcher/mol/updown.mol</file>
+		<file>ketcher/mol/action/layout.mol</file>
+		<file>ketcher/mol/action/sgroup.mol</file>
+		<file>ketcher/mol/pattern/hexa1.mol</file>
+		<file>ketcher/mol/pattern/hexa2.mol</file>
+		<file>ketcher/mol/pattern/hexaa.mol</file>
+		<file>ketcher/mol/pattern/naphthalene.mol</file>
+		<file>ketcher/mol/pattern/penta.mol</file>
+		<file>ketcher/png/dropdown.png</file>
+		<file noinclude="true">ketcher/png/logo.png</file>
+		<file>ketcher/png/action/arom.png</file>
+		<file>ketcher/png/action/arrow.png</file>
+		<file>ketcher/png/action/charge_minus.png</file>
+		<file>ketcher/png/action/charge_plus.png</file>
+		<file>ketcher/png/action/dearom.png</file>
+		<file>ketcher/png/action/document-new.png</file>
+		<file>ketcher/png/action/document-open.png</file>
+		<file>ketcher/png/action/document-save-as.png</file>
+		<file>ketcher/png/action/edit-clear.png</file>
+		<file>ketcher/png/action/edit-copy.png</file>
+		<file>ketcher/png/action/edit-cut.png</file>
+		<file>ketcher/png/action/edit-paste.png</file>
+		<file>ketcher/png/action/edit-redo.png</file>
+		<file>ketcher/png/action/edit-undo.png</file>
+		<file>ketcher/png/action/lasso.png</file>
+		<file>ketcher/png/action/layout.png</file>
+		<file>ketcher/png/action/reaction-arrow.png</file>
+		<file>ketcher/png/action/reaction-automap.png</file>
+		<file>ketcher/png/action/reaction-map.png</file>
+		<file>ketcher/png/action/reaction-plus.png</file>
+		<file>ketcher/png/action/reaction-unmap.png</file>
+		<file>ketcher/png/action/rectangle.png</file>
+		<file>ketcher/png/action/rgroup-attpoints.png</file>
+		<file>ketcher/png/action/rgroup-fragment.png</file>
+		<file>ketcher/png/action/rgroup-label.png</file>
+		<file>ketcher/png/action/sgroup.png</file>
+		<file>ketcher/png/action/structure.png</file>
+		<file>ketcher/png/action/view-zoom-in.png</file>
+		<file>ketcher/png/action/view-zoom-out.png</file>
+		<file>ketcher/png/atom/anyatom.png</file>
+		<file>ketcher/png/atom/br.png</file>
+		<file>ketcher/png/atom/c.png</file>
+		<file>ketcher/png/atom/cl.png</file>
+		<file>ketcher/png/atom/f.png</file>
+		<file>ketcher/png/atom/h.png</file>
+		<file>ketcher/png/atom/i.png</file>
+		<file>ketcher/png/atom/n.png</file>
+		<file>ketcher/png/atom/o.png</file>
+		<file>ketcher/png/atom/p.png</file>
+		<file>ketcher/png/atom/s.png</file>
+		<file>ketcher/png/bond/anybond.png</file>
+		<file>ketcher/png/bond/aromatic.png</file>
+		<file>ketcher/png/bond/crossed.png</file>
+		<file>ketcher/png/bond/double.png</file>
+		<file>ketcher/png/bond/doublearomatic.png</file>
+		<file>ketcher/png/bond/down.png</file>
+		<file>ketcher/png/bond/single.png</file>
+		<file>ketcher/png/bond/singlearomatic.png</file>
+		<file>ketcher/png/bond/singledouble.png</file>
+		<file>ketcher/png/bond/triple.png</file>
+		<file>ketcher/png/bond/up.png</file>
+		<file>ketcher/png/bond/updown.png</file>
+		<file>ketcher/png/pattern/hexa1.png</file>
+		<file>ketcher/png/pattern/hexa2.png</file>
+		<file>ketcher/png/pattern/hexaa.png</file>
+		<file>ketcher/png/pattern/naphthalene.png</file>
+		<file>ketcher/png/pattern/penta.png</file>
+		<file>ketcher/reaxys/reaxys.js</file>
+		<file>ketcher/rnd/editor.js</file>
+		<file>ketcher/rnd/elem_table.js</file>
+		<file>ketcher/rnd/events.js</file>
+		<file>ketcher/rnd/render.js</file>
+		<file>ketcher/rnd/restruct.js</file>
+		<file>ketcher/rnd/restruct_rendering.js</file>
+		<file>ketcher/rnd/rgroup_table.js</file>
+		<file>ketcher/rnd/visel.js</file>
+		<file>ketcher/ui/actions.js</file>
+		<file>ketcher/ui/ui.js</file>
+		<file>ketcher/util/common.js</file>
+		<file>ketcher/util/map.js</file>
+		<file>ketcher/util/pool.js</file>
+		<file>ketcher/util/set.js</file>
+		<file>ketcher/util/vec2.js</file>
+	</qresource>
+</RCC>
