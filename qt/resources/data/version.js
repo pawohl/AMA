@@ -1,0 +1,1 @@
+version("1.693.Qt5.1.1.ama_2014-01-29 18-35-10_student_version")

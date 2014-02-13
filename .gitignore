@@ -9,6 +9,8 @@
 *.pro.user
 *.pro.user.*
 *.sqlite_
+*.js_
+*.removed
 deploy_bin.bat
 copyDBToDistro.bat
 packages/

@@ -1,0 +1,1 @@
+rendergroupinfo({"fr":{"display":"DC-Detektion"},"ghs":{"display":"GHS"},"ids":{"display":"Identifier"},"tiaft":{"display":"TIAFT hR<sub>f</sub>"}})
