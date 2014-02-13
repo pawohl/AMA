@@ -14,6 +14,12 @@ copyDBToDistro.bat
 packages/
 sourcedata/
 doc/
+qt/resources/formulae/mol
+qt/resources/formulae/png_orig
+qt/resources/formulae/png_original
+qt/resources/formulae/svg_original
+qt/resources/formulae/skc
+
 
 #################
 ## Ketcher server components
