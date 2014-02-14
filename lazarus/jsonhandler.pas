@@ -163,6 +163,10 @@ begin
   {Attempt to write a config file}
   try
      CfgObj := TJSONObject.Create;
+     try
+          mkdir(ExtractFilePath(ConfigLocation));
+     except
+     end;
      Cfg2SaveFS := TFileStream.Create(ConfigLocation, fmCreate);
      TJSONObject(CfgObj).Add('appVersion', version);
      TJSONObject(CfgObj).Add('dataFileLocation', FilePath);
@@ -175,7 +179,8 @@ begin
        Cfg2SaveFS.Free;
        CfgObj.Free;
      end;
-  finally
+  except
+    // Nothing
   end;
 end;
 
@@ -375,7 +380,7 @@ begin
     begin
       MessageDlg(
                  'No data to work with',
-                 'The is no data that could be displayed.',
+                 'There is no fresh data that could be displayed. Data displayed may be outdated.',
                  mtError, [mbOK], 0
       );
     end;

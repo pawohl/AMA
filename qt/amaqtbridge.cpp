@@ -686,6 +686,13 @@ void AMAQtBridge::packAndGo(QString JSONData, QString JSONModel, QString JSONMod
     folder.cdUp();
     folder.cdUp();
 
+    // AMA-Tool photos
+    emit packAndGoProgress(99, qApp->tr("AMA-Tool (Lazarus)"));
+    QFile amaTool(appDirectory + "/" + "AMA-Tool-win32.exe");
+    if (amaTool.exists()) {
+        amaTool.copy(folder.absoluteFilePath("AMA-Tool-win32.exe"));
+    }
+
     // Finish
     emit packAndGoProgress(100, qApp->tr("Done."));
     emit packAndGoProgress(101, folder.absolutePath());
