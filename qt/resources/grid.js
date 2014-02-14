@@ -68,6 +68,8 @@ loader.implement('grid.js', ['views.js'], function($) {
 				ret.formatter = htmlFormatter;
 			} else if (rf.formatter === 'ghsFormatter') {
 				ret.formatter = ghsFormatter;
+			} else if (rf.formatter === 'photoFormatter') {
+				ret.formatter = photoFormatter;
 			} else if (rf.img) {
 				ret.formatter = imgFormatter;
 				ret.fixed = true;
@@ -171,6 +173,21 @@ loader.implement('grid.js', ['views.js'], function($) {
 				.appendTo($ret);
 		});
 		$('<div>').text(cellvalue).appendTo($ret);
+		return $ret.html() + originalValue(cellvalue);
+	};
+	
+	var photoFormatter = function(cellvalue, options, rowObject) {
+		var $ret = $('<div>'),
+			photoName = $.trim(cellvalue);
+		
+		if (photoName) {
+			$('<img>')
+				.attr({
+					src: 'images/photos/' + photoName
+				})
+				.appendTo($ret);
+		}
+		
 		return $ret.html() + originalValue(cellvalue);
 	};
 	

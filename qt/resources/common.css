@@ -244,7 +244,7 @@ div.tabcontent .printtable td, div.tabcontent .printtable th {
   padding: 1px;
   text-align:center;
 }
-.ui-jqgrid tr.jqgrow td.ama-sf {
+.ui-jqgrid tr.jqgrow td.ama-sf, .ui-jqgrid tr.jqgrow td.ama-photo {
   vertical-align: middle;
   text-align:center;
 }
@@ -363,10 +363,13 @@ body.redmond th.ama-tiaft {
 div.tabcontent td.ama-sf {
   background-color: #fff;
 }
-div.tabcontent td.ama-sf>img {
+div.tabcontent td.ama-sf>img, div.tabcontent td.ama-photo>img {
   max-height:100px;
   height:auto;
   width:auto;
+}
+div.ama-photo-tooltip {
+  max-width:500px;
 }
 .ama-invisible {
   visibility: hidden;

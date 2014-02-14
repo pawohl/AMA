@@ -34,10 +34,19 @@ loader.implement('feedback.js', [], function ($) {
 
 	window.feedbackForm = function (e) {
 		// Don't prevent default (opening a new tab)
-		var $dlg = $('<div>').text(
-			"Das Feedback wird auf einem von der Google Inc. betriebenen Server gesammelt. Im Folgenden einige Informationen zu Deinem System, die speziell für die Fehlerberichterstattung nützlich sind:"
-		),
-			$ul = $('<ul>').appendTo($dlg),
+		
+		var cssHash = {
+				'position': 'relative',
+				'z-index': '2',
+				'text-shadow': '0 0 2px #000, 0 0 8px #000',
+				'font-weight': 'bold',
+				'color': '#FFF',
+				'background-color': 'rgba(100,100,50,0.2)'
+			},
+			$dlg = $('<div>').css('position', 'relative'),
+			$bg = $('<div>').text('AMA App').attr('style', 'width:831px; height: 260px; background-image: url("images/photos/ChemDrugs_Rillke.jpg"); background-repeat: no-repeat; background-position: 0px 0px; color: rgb(134, 194, 62); display: block; text-align: center; font-weight: bold; font-size: 90px; line-height: 1em; padding-top: 90px; text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 10px rgb(255, 255, 255), 0px 0px 10px rgb(255, 255, 255); position: absolute; top: 0px; left: 0px; z-index: 1;').appendTo($dlg),
+			$info = $('<div>').css(cssHash).text("Das Feedback wird auf einem von der Google Inc. betriebenen Server gesammelt. Im Folgenden einige Informationen zu Deinem System, die speziell für die Fehlerberichterstattung nützlich sind:").hide().delay(500).fadeIn('slow').appendTo($dlg),
+			$ul = $('<ul>').css(cssHash).hide().delay(500).fadeIn('slow').appendTo($dlg),
 			profile = $.client.profile();
 
 		$('<li>').text("Versionsnummer der Anwendung: " + app.version).appendTo($ul);
@@ -45,7 +54,8 @@ loader.implement('feedback.js', [], function ($) {
 		$('<li>').text("Dein Browser: " + formatClientProfile(profile)).appendTo($ul);
 		$dlg.dialog({
 			title: "Informationen zur Berichterstattung",
-			width: Math.min($win.width(), 600),
+			width: Math.min($win.width(), 837),
+			height: Math.min($win.height(), 410),
 			close: function () {
 				$(this).remove();
 			}

@@ -82,7 +82,7 @@ QNetworkReply* AMANetworkProxy::createRequest(Operation op, const QNetworkReques
     if (op == QNetworkAccessManager::PostOperation) {
         return new AMANetworkReplyPostProxy(this, request, op, outgoingData, m_bridge);
 
-    } else if (sReq.startsWith("qrc:/formulae/") || sReq.startsWith("qrc:/images/GHS/") || isJSData) {
+    } else if (sReq.startsWith("qrc:/formulae/") || sReq.startsWith("qrc:/images/GHS/") || sReq.startsWith("qrc:/images/photos/") || isJSData) {
         // Reply this request with database content?
         // Formula files are not statically compiled into the resource section;
         // otherwise they could not be changed without re-compiling the application.
@@ -248,6 +248,16 @@ AMANetworkReplyProxy::AMANetworkReplyProxy(QObject *parent,
             qWarning() << " FROMULA: No " << fileExtension << " for " << filename.first() << req.url().path();
         }
         m_content.append(qba);
+    } else if (sReq.startsWith("qrc:/images/photos/")) {
+        QStringList photoName = req2FilenameParts(req);
+        QDir photoDir(*(m_bridge->m_app_dir) + "/" + "photos");
+        if (photoDir.exists()) {
+            QString photoPath = photoDir.absoluteFilePath(photoName.first() + '.' + photoName.last());
+            QFile photo(photoPath);
+            photo.open(QIODevice::ReadOnly);
+            m_content.append(photo.readAll());
+            photo.close();
+        }
     }
 
     QString mime;

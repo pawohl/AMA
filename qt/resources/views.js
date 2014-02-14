@@ -222,6 +222,42 @@ loader.implement('views.js', ['tabslogic.js'], function($) {
 				return $r;
 			}
 		});
+	
+		$win.tooltip({
+			items: '.ama-photo',
+			tooltipClass: 'ama-photo-tooltip',
+			position: {
+				collision: 'flipfit',
+				at: 'right top',
+				my: 'left bottom'
+			},
+			content: function() {
+				var $this = $(this),
+					$img = $this.filter('img').add($this.find('img')),
+					newSrc = $img.attr('src'),
+					$r = $('<div>').css({
+						'background': '#eed'
+					});
+				 
+				if (!newSrc) return false;
+				$r.css({
+					'width': 500
+				});
+				
+				var $imgNew = $('<img>').attr({
+					src: newSrc
+				}).css({
+					padding: 0,
+					margin: 0,
+					display: 'block'
+				}).appendTo($r);
+				$imgNew.css({
+					width: '500px',
+					height: 'auto'
+				});
+				return $r;
+			}
+		});
 	};
 	$(app.UI.delegateFormulaMagnifyTooltip);
 	

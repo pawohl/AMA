@@ -188,6 +188,7 @@ private slots:
 public:
     /// Fieldname of the primary key of the compound table
     QString m_id_field;
+    QString* m_app_dir;
 
 protected:
     QNetworkAccessManager* m_network;

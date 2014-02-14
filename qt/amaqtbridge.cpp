@@ -90,6 +90,7 @@ AMAQtBridge::AMAQtBridge(QNetworkDiskCache* netcache, QWebView* parent)
     : QObject(parent), m_cache(netcache)
 {
     m_listFilled = false;
+    m_app_dir = &appDirectory;
 
     /*  AMAQtBridge only wants to receive http responses
         for requests that it makes, so that's why it has its own
@@ -632,7 +633,7 @@ void AMAQtBridge::packAndGo(QString JSONData, QString JSONModel, QString JSONMod
     }
 
     // GHS
-    emit packAndGoProgress(95, qApp->tr("GHS"));
+    emit packAndGoProgress(90, qApp->tr("GHS"));
     QSqlTableModel* ghsModel = new QSqlTableModel(this);
     ghsModel->setTable("ghs");
     ghsModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
@@ -663,6 +664,25 @@ void AMAQtBridge::packAndGo(QString JSONData, QString JSONModel, QString JSONMod
     }
 
     ghsModel->deleteLater();
+    folder.cdUp();
+
+    folder.mkdir("photos");
+    folder.cd("photos");
+
+    // Substance photos
+    emit packAndGoProgress(95, qApp->tr("Substance photos"));
+    QDir photoDir(appDirectory + "/" + "photos");
+    if (photoDir.exists()) {
+        QStringList photos = photoDir.entryList(QDir::Files);
+        QString photoName;
+        foreach (photoName, photos) {
+            QString photoOrigin = photoDir.absoluteFilePath(photoName);
+            QString photoDest = folder.absoluteFilePath(photoName);
+            QFile::copy(photoOrigin, photoDest);
+        }
+    }
+
+
     folder.cdUp();
     folder.cdUp();
 
